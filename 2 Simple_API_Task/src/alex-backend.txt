@@ -1,0 +1,5 @@
+//database user password
+alex-backend
+lSIjCaG2yO4hHeqH
+
+mongodb+srv://alex-backend:lSIjCaG2yO4hHeqH@cluster0.cwfy9lj.mongodb.net/
