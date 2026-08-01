@@ -25,5 +25,24 @@ app.get('/notes',async(req,res)=>{
     })
 })
 
+app.delete('/notes/:id',async(req,res)=>{
+    const id=req.params.id
+    await noteModel.findByIdAndDelete({
+        _id:id
+    })
+    res.status(200).json({
+        message:"Note deleted Successfully"
+    })
+})
 
+app.patch('/notes/:id',async(req,res)=>{
+    const id=req.params.id;
+    const description=req.body.description;
+
+    await noteModel.findByIdAndUpdate({_id:id},{description:description})
+
+    res.status(200).json({
+        message:"Note Updated Successfully"
+    })
+})
 module.exports=app
