@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+    width:100%;
+    min-height:100vh;
+}
+
+body{
+    background:#4b5563;
+}
+
+.feed-section{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
+    background:#f3f4f6;
+}
+
+.post-card{
+    width:100%;
+    max-width:350px;
+    background:white;
+    border-radius:15px;
+    padding:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.post-image{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.post-caption{
+    color:#111;
+    margin-top:10px;
+}
