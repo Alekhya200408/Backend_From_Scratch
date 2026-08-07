@@ -2,7 +2,10 @@ const mongoose =require('mongoose')
 
 const userSchema=new mongoose.Schema({
     username:String,
-    gmail:String,
+    gmail:{
+        type:String,
+        unique:true
+    },
     password:String,
 })
 
