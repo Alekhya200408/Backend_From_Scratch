@@ -1,4 +1,4 @@
-const {imageKit}=require('@imagekit/nodejs')
+const imageKit=require('@imagekit/nodejs')
 const { Folders } = require('@imagekit/nodejs/resources/index.js')
 
 const ImageKitClient=new imageKit({
@@ -8,7 +8,7 @@ const ImageKitClient=new imageKit({
 async function uploadFile(file) {
     const result=ImageKitClient.files.upload({
         file,
-        filename:"music_"+Date.now(),
+        fileName:"music_"+Date.now(),
         folder:"backend_sctrach/music"       
     })
     return result

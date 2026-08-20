@@ -3,16 +3,16 @@ const mongoose=require('mongoose')
 const musicScheema=new mongoose.Schema({
     uri:{
         type:String,
-        required:True
+        required:true
     },
     title:{
         type:String,
-        required:True
+        required:true
     },
     artist:{
         type:mongoose.Schema.Types.ObjectId,
         ref:"user",
-        required:True
+        required:true
     }
 })
 
