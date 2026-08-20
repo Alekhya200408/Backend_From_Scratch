@@ -20,6 +20,7 @@ const userSchema=new mongoose.Schema({
     enum:["user","artist"],
     default:"user"
    }
+   
 })
 
 const userModel=mongoose.model('user',userSchema)
